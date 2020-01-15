@@ -2,9 +2,9 @@ import random
 
 
 class PrivateKey(object):
-    def __init__(self, p,a):
+    def __init__(self, p, a):
         self.p = p
-        self.a=a
+        self.a = a
 
 
 class PublicKey(object):

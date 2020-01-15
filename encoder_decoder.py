@@ -1,11 +1,10 @@
-
 def encode_str(data):
     buf = bytearray()
     for char in data:
         num = ord(char)
 
         # Lower case latin letters
-        if num >= 97 and num <= 122:
+        if 97 <= num <= 122:
             buf.append(num - 96)
 
         # Space

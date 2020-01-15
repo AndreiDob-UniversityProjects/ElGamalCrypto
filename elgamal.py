@@ -139,10 +139,11 @@ def test():
     keys = generate_keys()
     priv = keys['privateKey']
     pub = keys['publicKey']
-    message = "my name is jeb"
+    message = "my name is jeff"
     cipher = encrypt(pub, message)
     plain = decrypt(priv, cipher)
     print(plain)
+    print(cipher)
     return message == plain
 
 
